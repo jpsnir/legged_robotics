@@ -44,7 +44,6 @@ clear all %#ok
 % ---------------------------------------------------
 % Choose Scripts to Run
 % ---------------------------------------------------
-filename = 'state_variable_mt_10_l_50cm.mat'
 
 % Set to 0 if you don't want to run generate4.m
 runGen = 0;
@@ -139,4 +138,6 @@ if (runSimF==1)
 end
 % Saving variables: full_state(q,q_d),(q_1,q_1_d),time,...
 %                        bezier_coeff_q2, bezier_coeff_q3)
+filename = 'state_variable_mt_1_l_25cm.mat'
 save(filename,'x_tot','z_tot','t_tot','alpha2','alpha3');
+global hip_position;

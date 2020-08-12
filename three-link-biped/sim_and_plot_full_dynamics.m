@@ -95,7 +95,7 @@ ti = 0; tf = 20;
 
 options = odeset('Event',@event,'AbsTol',1e-6,'RelTol',1e-6);
 
-n = 10;     % Number of desired steps the biped should take
+n = 3;     % Number of desired steps the biped should take
 
 % Define variables where time and states of solution will be appended
 t_tot = []; x_tot = [];

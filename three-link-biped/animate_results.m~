@@ -7,7 +7,7 @@
 %
 
 function animate_results(t,x)
-global hip_position;
+
 % Time is always 0 at the begining of an ODE45 solution, so it is the most
 % consistent way to seperate phases and steps
 %
@@ -50,7 +50,7 @@ xlim(ah,[xlim_min, xlim_max]);
 ylim(ah,[-2 2]);
 
 hold(ah,'off'); % To animate
-hip_position = zeros(length(t),2);
+
 for i = 1:length(t)
     
     q = x(i,1:3);
@@ -88,7 +88,7 @@ for i = 1:length(t)
     line(ah, L_step(1)+[pMt(1),pMt(1)], L_step(2)+[pMt(2),pMt(2)],'Color','k','Marker','o')
     
     %legend([p1, p2, p3],{'stance leg','swing leg','torso'});
-    hip_position(i,:) = [L_step(1)+ pMh(1), L_step(2)+pMh(2)];
+    
     drawnow limitrate
 %     pause(0.02);
 end

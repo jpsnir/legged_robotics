@@ -1,0 +1,14 @@
+load('state_variable_mt_10_l_50cm.mat');
+z_50cm = [z_tot(:,1),z_tot(:,2)]
+load('state_variable_mt_10_l_25cm.mat');
+z_25cm = [z_tot(:,1),z_tot(:,2)]
+
+figure(1);
+plot(z_50cm(:,1),z_50cm(:,2),z_25cm(:,1),z_25cm(:,2));
+xlabel('q1');
+ylabel('q1_d');
+legend('50 cm torso','25 cm torso'
+hold on;
+load('state_variable_mt_10_l_25cm.mat');
+plot(z_tot(:,1),z_tot(:,2));
+
