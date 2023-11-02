@@ -1,3 +1,4 @@
-# Legged - Final Project
+# Three link pendulum modeling and simulation
 
-Download Final Project Zip and execute main.m
+## Running the project
+ Execute `main.m` in the HZD.
